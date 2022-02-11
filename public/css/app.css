@@ -18407,3 +18407,15 @@ button{
   width: 400!important;
   height: 250 !important;
 }
+
+.btn-morado{
+  background-color: lightpink;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-morado2{
+  background-color: lightgreen;
+  color: white;
+  margin-top: 10px;
+}
