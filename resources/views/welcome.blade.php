@@ -16,7 +16,6 @@
     <style>
         body {
             font-family: 'Nunito';
-            background: #f7fafc;
         }
     </style>
 </head>
@@ -29,10 +28,10 @@
                         @auth
                             <a href="{{ url('/dashboard') }}" class="text-muted">Dashboard</a>
                         @else
-                            <a class="btn btn-primary" href="{{ route('login') }}" class="text-muted">Iniciar sesión</a>
+                            <a class="btn btn-morado2" href="{{ route('login') }}" class="text-muted">Iniciar sesión</a>
 
                             @if (Route::has('register'))
-                                <a class="btn btn-success" href="{{ route('register') }}" class="ms-4 text-muted">Registrar</a>
+                                <a class="btn btn-morado" href="{{ route('register') }}" class="ms-4 text-muted">Registrar</a>
                             @endif
                         @endif
                     </div>
@@ -44,12 +43,11 @@
     <div class="container-fluid my-5 pt-5 px-5">
         <div class="row justify-content-center px-4">
             <div class="col-md-12 col-lg-9">
-               
-
                 <div class="d-flex justify-content-center mt-3">
                     <div class="text-sm text-muted">
                         <div class="flex align-content-center">
-                            <h1>Bienvenido a GeoTalk</h1>
+                            <img src="{{URL::asset('../../img/Logo.png')}}" width="300" alt="Imagen no disponible">  
+                            <h1 class="titulo">Bienvenido a GeoTalk</h1>
                         </div>
                     </div>
                 </div>
