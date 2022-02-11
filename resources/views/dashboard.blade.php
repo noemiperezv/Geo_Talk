@@ -4,6 +4,6 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <x-jet-welcome />
+        <img src="{{URL::asset('../../img/Logo 2.png')}}" width="56" alt="no jala">
+    <x-jet-welcome/>
 </x-app-layout>
