@@ -47,7 +47,7 @@
                     <div class="text-sm text-muted">
                         <div class="flex align-content-center">
                             <img src="{{URL::asset('../../img/Logo.png')}}" width="300" alt="Imagen no disponible">  
-                            <h1 class="titulo">Bienvenido a GeoTalk</h1>
+                            <h1 class="titulo">Bienvenido a GeoTalk <i class="fas fa-user"></i></h1>
                         </div>
                     </div>
                 </div>
