@@ -135,8 +135,12 @@
                                 {{ __('Administración de la cuenta') }}
                             </h6>
 
+                            <x-jet-dropdown-link href="{{ route('mi_perfil') }}">
+                                {{ __('Mi perfil') }}
+                            </x-jet-dropdown-link>
+
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Perfil') }}
+                                {{ __('Editar perfil') }}
                             </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

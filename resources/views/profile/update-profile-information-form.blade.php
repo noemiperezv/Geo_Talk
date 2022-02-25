@@ -1,16 +1,16 @@
 <x-jet-form-section submit="updateProfileInformation">
     <x-slot name="title">
-        {{ __('Profile Information') }}
+        {{ __('Información del perfil') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Update your account\'s profile information and email address.') }}
+        {{ __('Actualiza la información de tu cuenta y la dirección de correo.') }}
     </x-slot>
 
     <x-slot name="form">
 
         <x-jet-action-message on="saved">
-            {{ __('Saved.') }}
+            {{ __('Guardado.') }}
         </x-jet-action-message>
 
         <!-- Profile Photo -->
@@ -42,7 +42,7 @@
                 </div>
 
                 <x-jet-secondary-button class="mt-2 me-2" type="button" x-on:click.prevent="$refs.photo.click()">
-                    {{ __('Select A New Photo') }}
+                    {{ __('Selecciona una nueva foto') }}
 				</x-jet-secondary-button>
 				
 				@if ($this->user->profile_photo_path)
@@ -51,7 +51,7 @@
                             <span class="visually-hidden">Loading...</span>
                         </div>
 
-                        {{ __('Remove Photo') }}
+                        {{ __('Eliminar foto') }}
                     </x-jet-secondary-button>
                 @endif
 
@@ -62,14 +62,14 @@
         <div class="w-md-75">
             <!-- Name -->
             <div class="mb-3">
-                <x-jet-label for="name" value="{{ __('Name') }}" />
+                <x-jet-label for="name" value="{{ __('Nombre') }}" />
                 <x-jet-input id="name" type="text" class="{{ $errors->has('name') ? 'is-invalid' : '' }}" wire:model.defer="state.name" autocomplete="name" />
                 <x-jet-input-error for="name" />
             </div>
 
             <!-- Email -->
             <div class="mb-3">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
+                <x-jet-label for="email" value="{{ __('Correo electrónico') }}" />
                 <x-jet-input id="email" type="email" class="{{ $errors->has('email') ? 'is-invalid' : '' }}" wire:model.defer="state.email" />
                 <x-jet-input-error for="email" />
             </div>
@@ -80,10 +80,10 @@
 		<div class="d-flex align-items-baseline">
 			<x-jet-button>
                 <div wire:loading class="spinner-border spinner-border-sm" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                    <span class="visually-hidden">Cragando...</span>
                 </div>
 
-				{{ __('Save') }}
+				{{ __('Guardar') }}
 			</x-jet-button>
 		</div>
     </x-slot>

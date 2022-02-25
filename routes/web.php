@@ -68,3 +68,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/mapa_del_sitio', function
 Route::middleware(['auth:sanctum', 'verified'])->get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/mi_perfil', function () {
+    return view('mi_perfil');
+})->name('mi_perfil');
