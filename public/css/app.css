@@ -18408,7 +18408,7 @@ button{
   height: 250 !important;
 }
 
-.btn-morado{
+.btn-rosa{
   background-color: lightpink;
   color: white;
   margin-top: 10px;
@@ -18418,4 +18418,26 @@ button{
   background-color: lightgreen;
   color: white;
   margin-top: 10px;
+}
+
+.btn-morado{
+  background-color:var(--bs-purple);
+  color: white;
+  margin-top: 10px;
+}
+
+.contenido{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 2px black;
+}
+.justificado{
+  text-align: justify;
+}
+.centrado{
+  padding: 20px;
+}
+
+.margen{
+  margin-left: 2px;
 }

@@ -36,3 +36,35 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/crear_clase', function ()
 Route::middleware(['auth:sanctum', 'verified'])->get('/editar_clase', function () {
     return view('editar_clase');
 })->name('editar_clase');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/noticiasInicio', function () {
+    return view('noticiasInicio');
+})->name('noticiasInicio');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/noticiasUsuarios', function () {
+    return view('noticiasUsuarios');
+})->name('noticiasUsuarios');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/crearPublicacion', function () {
+    return view('crearPublicacion');
+})->name('crearPublicacion');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/ver_clase', function () {
+    return view('ver_clase');
+})->name('ver_clase');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/quienes_somos', function () {
+    return view('quienes_somos');
+})->name('quienes_somos');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/objetivo', function () {
+    return view('objetivo');
+})->name('objetivo');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/mapa_del_sitio', function () {
+    return view('mapa_del_sitio');
+})->name('mapa_del_sitio');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/contacto', function () {
+    return view('contacto');
+})->name('contacto');
