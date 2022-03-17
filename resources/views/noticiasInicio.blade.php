@@ -187,6 +187,6 @@
 
 </x-app-layout>
 
-
+@include('footer')
 </body>
 </html>
