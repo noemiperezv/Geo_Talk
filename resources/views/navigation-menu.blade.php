@@ -34,15 +34,18 @@
                             <x-jet-dropdown-link href="{{ route('mis_clases') }}">
                                 {{ __('Mis clases') }}
                             </x-jet-dropdown-link>
-                            <x-jet-dropdown-link href="{{ route('crear_clase') }}">
+                            @if(auth()->user()->idRol == 1 || auth()->user()->idRol == 3)
+                                <x-jet-dropdown-link href="{{ route('crear_clase') }}">
                                 {{ __('Crear clase') }}
-                            </x-jet-dropdown-link>
-                            <x-jet-dropdown-link href="{{ route('editar_clase') }}">
-                                {{ __('Editar clase') }}
-                            </x-jet-dropdown-link>
+                                </x-jet-dropdown-link>
+                                <x-jet-dropdown-link href="{{ route('editar_clase') }}">
+                                    {{ __('Editar clase') }}
+                                </x-jet-dropdown-link>
+                            @endif
                             <x-jet-dropdown-link href="{{ route('ver_clase') }}">
                                 {{ __('Ver clase') }}
                             </x-jet-dropdown-link>
+                            
                         </x-slot>
                     </x-jet-dropdown>
                     <x-jet-dropdown id="settingsDropdown">

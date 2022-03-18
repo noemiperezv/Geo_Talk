@@ -29,6 +29,14 @@
                 </div>
 
                 <div class="mb-3">
+                <x-jet-label for="idRol" value="{{ __('Registrarse como:') }}" />
+                    <select name="idRol" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una opción</option>
+                        <option value="1">Profesor</option>
+                        <option value="2">Alumno</option>
+                    </select>
+                </div>
+                <div class="mb-3">
                     <x-jet-label value="{{ __('Contraseña') }}" />
 
                     <x-jet-input class="{{ $errors->has('password') ? 'is-invalid' : '' }}" type="password"

@@ -26,6 +26,7 @@
                 @if (Route::has('login'))
                     <div class="">
                         @auth
+                        
                             <a href="{{ url('/noticiasInicio') }}" class="text-muted">Tablero</a>
                         @else
                             <a class="btn btn-morado2" href="{{ route('login') }}" class="text-muted">Iniciar sesión</a>

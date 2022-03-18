@@ -184,9 +184,9 @@
         </div>
     </div>
 </div>
-
+@include('footer')
 </x-app-layout>
 
-@include('footer')
+
 </body>
 </html>
